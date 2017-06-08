@@ -12,7 +12,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 #topnav{padding:20px 0; color:#C0BAB6; background-color:#232323; clear:both;}
 #topnav ul{margin:0; padding:0; list-style:none; text-transform:uppercase; font-size:12px;}
-#topnav ul ul{z-index:9999; position:absolute; width:360px; text-transform:none;}
+#topnav ul ul{z-index:9999; position:absolute; width:3600px; text-transform:none;}
 #topnav ul ul ul, #topnav ul ul ul ul{left:160px; top:0;}
 #topnav ul li:last-child ul, #topnav ul li.last-child ul{right:0;}
 #topnav ul.negative{left:-160px;}
