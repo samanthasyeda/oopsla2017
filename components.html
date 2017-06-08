@@ -84,6 +84,7 @@
   <div id="container">
     <!-- ################################################################################################ -->
     <div class="full_width clear">
+	    	<p>Overall, our approach with six implemented implicit beliefs and 1-level control flow analysis (1-CFA) improves the precondition inference result in terms of precision and recall. In this section we analyze the eectiveness of each component individually. Table 4 show the improvements of each component in precision and recall, respectively. In general, every component helps improve the recall of the usage-based approach. The improvement could be as high as 110% with count-controlled loop on SWING. Most of the times, every component also helps improve the precision except for the 4 cases of three components on SWING and OIC component on DATA. Over the libraries, XML and SWT benet the most in both precision and recall. Now, let us present detailed results of two components CCL and OIC which are representative for two trends: improving in both precision and recall, and improving in recall with some decrease in precision, respectively.</p>
 		<p><a name="components"><image src="figures/components.png" /></a></p>
 		<p><a name="ccl"><h2>Count Controlled Loop (CCL)</h2></a>
 		<image src="figures/ccl.png" /></p>
@@ -99,6 +100,9 @@
 		<image src="figures/le.png" width="50%"/></p>
 		<p><a name="cfa"><h2>1-Level Control Flow Analysis (1-CFA)</h2></a>
 		<image src="figures/cfa.png" /></p>
+	    	<p><a name="cfa_comparison"><h2>A full comparison of Beliefs, CFA, CFA+Beliefs with respect to the baseline</h2></a> is shown in the following figure:</p>
+	    	<p><image src="figures/CFA-comparison-precision" /></p>
+	  	<p><image src="figures/CFA-comparison-recall" /></p>
     </div>
     <!-- ################################################################################################ -->
   </div>
