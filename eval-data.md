@@ -1,4 +1,4 @@
 #### Data Collection
 
-1. [test link](ground_ truth.xlsx)
+1. [test link](({{file name='ground_ truth.xlsx'}}))
 
