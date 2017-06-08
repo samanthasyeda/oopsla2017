@@ -7,6 +7,5 @@
    <button type="submit">Download!</button>
 </form>
 
-<button type="submit" onclick="window.open('https://github.com/doubleblinddoubleblind/oopsla2017/blob/master/ground_truth.xlsx')">Download!</button>
-
+<button class="button-save large">Big Fat Button</button>
 
