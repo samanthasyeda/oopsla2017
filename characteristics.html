@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining
+
+</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery.1.9.0.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/ie/css3-mediaqueries.min.js"></script>
+<script src="scripts/ie/ie9.js"></script>
+<script src="scripts/ie/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining</a></h1>
+    </div>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="topnav">
+    <ul class="clear">
+      <li class="active first"><a href="index.html">Main</a></li>
+      <li><a class="drop" href="data.html">Collected Data</a>
+        <ul>
+          <li><a href="data.html#data">Client Code Corpus</a></li>
+          <li><a href="data.html#truth">Ground-truth of Preconditions</a></li>
+        </ul>
+      </li>
+      <li><a class="drop">Result Analysis</a>
+        <ul>
+          <li><a href="accuracy.html">Accuracy</a></li>
+          <li><a class="drop" href="characteristics.html">Characteristics of Mined Preconditions</a>
+            <ul>
+              <li><a href="characteristics.html#correct">Correctly Mined Preconditions</a></li>
+              <li><a href="characteristics.html#incorrect">Incorrectly Mined Preconditions</a></li>
+              <li><a href="characteristics.html#missing">Missing Preconditions</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="components.html">Effectiveness of Single Components</a>
+            <ul>
+              <li><a href="components.html#ccl">Count Controlled Loop (CCL)</a></li>
+              <li><a href="components.html#oic">Object Instance Creation (OIC)</a></li>
+              <li><a href="components.html#tc">Type Comparison (TC)</a></li>
+              <li><a href="components.html#nd">Null Derefrence (ND)</a></li>
+              <li><a href="components.html#sce">Short Circuit Evaluation (SCE)</a></li>
+              <li><a href="components.html#le">Local Exception (LE)</a></li>
+              <li><a href="components.html#cfa">1-Level Control Flow Analysis (1-CFA)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a class="drop" href="figurestables.html">Figures and Tables</a>
+        <ul>
+          <li><a href="figurestables.html#dataset">Figure 9. Dataset</a></li>
+          <li><a href="figurestables.html#accuracy">Figure 10. Accuracy</a></li>
+          <li><a href="figurestables.html#correct">Table 1. Correctly-mined preconditions</a></li>
+          <li><a href="figurestables.html#incorrect">Table 2. Incorrectly-mined preconditions</a></li>
+          <li><a href="figurestables.html#missing">Table 3. Missing preconditions</a></li>
+          <li><a href="figurestables.html#components">Table 4. Improvement for single components</a></li>
+          <li><a href="figurestables.html#ccl">Figure 11. Accuracy of Count Controlled Loop (CCL)</a></li>
+          <li><a href="figurestables.html#oic">Figure 12. Accuracy of Object Instance Creation (OIC)</a></li>
+          <li><a href="figurestables.html#tc">Figure 13. Accuracy of Type Comparison (TC)</a></li>
+          <li><a href="figurestables.html#nd">Figure 14. Accuracy of Null Dereference (ND)</a></li>
+          <li><a href="figurestables.html#sce">Figure 15. Accuracy of Short Circuit Evaluation (SCE)</a></li>
+          <li><a href="figurestables.html#le">Figure 16. Improvement in precision of Local Exception (LE)</a></li>
+          <li><a href="figurestables.html#cfa">Figure 17. Accuracy of 1-Level Control Flow Analysis (1-CFA)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- content -->
+<div class="wrapper row3">
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <div class="full_width clear">
+		Frameworks and libraries provide application programming interfaces (APIs) that serve as building blocks in modern sofware development. As APIs present the opportunity of increased productivity, it also calls for correct use to avoid buggy code. Usage-based specifcation mining technique has shown great promise in solving this problem through a data-driven approach. These techniques leverage the use of the API in large corpora to understand the recurring usage of the API and infer behavioral specifcations (preconditions and postconditions) from such usage. A challenge for such technique is thus inference in the presence of insufcient usage, in terms of both frequency and richness. We refer to this as a sparse usage problem. This paper presents the frst technique to solve the sparse usage problem in usage-based precondition mining. Our key insight is to leverage implicit beliefs to overcome sparse usage. An implicit belief is a fact about language structure and semantics known to the programmer, and thus not explicitly documented in code. The technical underpinnings of our new precondition mining technique include a technique to observe the semantics of code structures leading to an API call to infer preconditions that are implicitly present in the code corpus, a strategy to detect these implicit beliefs in this paper based on the data and control fow related properties, a catalog of 35 code elements in total that can be used to derive implicit belief from a program, and empirical evaluation of all of these ideas. We have analyzed over 350 millions lines of code and 7 libraries that sufer from sparse usage problem. Our approach realizes 6 implicit beliefs and we have observed that addition of single level context sensitivity can further improve the result of usage based precondition mining. The result shows that we achieve overall 60% in precision and 69% in recall and the results relatively improved by 32% in precision and 78% in recall compared to base usage-based mining approach for these libraries.
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved</p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>

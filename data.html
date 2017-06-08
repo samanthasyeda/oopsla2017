@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining
+
+</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery.1.9.0.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/ie/css3-mediaqueries.min.js"></script>
+<script src="scripts/ie/ie9.js"></script>
+<script src="scripts/ie/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining</a></h1>
+    </div>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <nav id="topnav">
+    <ul class="clear">
+      <li class="active first"><a href="index.html">Main</a></li>
+      <li><a class="drop" href="data.html">Collected Data</a>
+        <ul>
+          <li><a href="data.html#data">Client Code Corpus</a></li>
+          <li><a href="data.html#truth">Ground-truth of Preconditions</a></li>
+        </ul>
+      </li>
+      <li><a class="drop">Result Analysis</a>
+        <ul>
+          <li><a href="accuracy.html">Accuracy</a></li>
+          <li><a class="drop" href="characteristics.html">Characteristics of Mined Preconditions</a>
+            <ul>
+              <li><a href="characteristics.html#correct">Correctly Mined Preconditions</a></li>
+              <li><a href="characteristics.html#incorrect">Incorrectly Mined Preconditions</a></li>
+              <li><a href="characteristics.html#missing">Missing Preconditions</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="components.html">Effectiveness of Single Components</a>
+            <ul>
+              <li><a href="components.html#ccl">Count Controlled Loop (CCL)</a></li>
+              <li><a href="components.html#oic">Object Instance Creation (OIC)</a></li>
+              <li><a href="components.html#tc">Type Comparison (TC)</a></li>
+              <li><a href="components.html#nd">Null Derefrence (ND)</a></li>
+              <li><a href="components.html#sce">Short Circuit Evaluation (SCE)</a></li>
+              <li><a href="components.html#le">Local Exception (LE)</a></li>
+              <li><a href="components.html#cfa">1-Level Control Flow Analysis (1-CFA)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a class="drop" href="figurestables.html">Figures and Tables</a>
+        <ul>
+          <li><a href="figurestables.html#dataset">Figure 9. Dataset</a></li>
+          <li><a href="figurestables.html#accuracy">Figure 10. Accuracy</a></li>
+          <li><a href="figurestables.html#correct">Table 1. Correctly-mined preconditions</a></li>
+          <li><a href="figurestables.html#incorrect">Table 2. Incorrectly-mined preconditions</a></li>
+          <li><a href="figurestables.html#missing">Table 3. Missing preconditions</a></li>
+          <li><a href="figurestables.html#components">Table 4. Improvement for single components</a></li>
+          <li><a href="figurestables.html#ccl">Figure 11. Accuracy of Count Controlled Loop (CCL)</a></li>
+          <li><a href="figurestables.html#oic">Figure 12. Accuracy of Object Instance Creation (OIC)</a></li>
+          <li><a href="figurestables.html#tc">Figure 13. Accuracy of Type Comparison (TC)</a></li>
+          <li><a href="figurestables.html#nd">Figure 14. Accuracy of Null Dereference (ND)</a></li>
+          <li><a href="figurestables.html#sce">Figure 15. Accuracy of Short Circuit Evaluation (SCE)</a></li>
+          <li><a href="figurestables.html#le">Figure 16. Improvement in precision of Local Exception (LE)</a></li>
+          <li><a href="figurestables.html#cfa">Figure 17. Accuracy of 1-Level Control Flow Analysis (1-CFA)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- content -->
+<div class="wrapper row3">
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <div class="full_width clear">
+	<image src="figures/data.png" />
+	<p> We have used a large code corpus (Allamanis and Sulton 2013) consisting of 14,785 projects. The large code corpus is curated using Github's social fork system in a way to isolate the low quality projects that are rarely forked. The corpus contains over 350 million lines of source code where only files written in Java language are considered. Figure 9a shows the complete statistics of the used datasets. Thee dataset includes in total 1,212,124 API methods calls (Figure 9b) from 7 different libraries of interest.</p>
+    </div>
+    <p><a href=""> Download the Ground-truth of Preconditions</a></p>
+	</div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved</p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>
