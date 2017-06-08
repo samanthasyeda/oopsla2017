@@ -6,6 +6,19 @@
 <form method="get" action="https://github.com/doubleblinddoubleblind/oopsla2017/blob/master/ground_truth.xlsx">
    <button type="submit">Download!</button>
 </form>
+<html>
+<body>
 
-<button class="button-save large">Big Fat Button</button>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+</body>
+</html>
 
