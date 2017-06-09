@@ -98,16 +98,19 @@
       Despite that, our implicit belief from local exception component successfully removed conditions guarding project-specific exception and lowered the number of incorrect preconditions from project-specific conditions.</p>
       <p><a name="mp"><h2>Missing Preconditions</h2></a>
       Although our approach was able to detect more preconditions through implicit belief compared to existing usage based mining approach, we still miss preconditions. We have analyzed the missing classes of preconditions that our approach was unable to find given the dataset we have used for 7 libraries of interest. We found that we did not miss any preconditions that the base approach could mine. We have mainly observed three categories of missing preconditions shown in Table 3.
-      <span><strong>No Check.</strong> The first category of missing cases are those preconditions that does not appear explicitly nor implicitly at all in the code corpus before calling the APIs. The absence of such preconditions are mainly caused by four factors:
-      <ul>
-        <li>Exception Handling: Sometimes programmers might be unsure about the preconditions of the APIs, thus, they would surround API calls with try statements and catch clauses to handle the exceptions. This is often the reason why code corpus do not have the necessary preconditions for APIs before calling.</li>
-        <li>Semantics Guarantee No Exception: Sometimes developers are well aware that the domain semantics of their project guarantees that certain preconditions of an API always hold. For example, if they know the files are always non-empty, then the list of lines read from the files are always non-empty too. Therefore, accessing first element of the list is always possible. In such cases, checking whether precondition is met before calling the API becomes extraneous, resulting in the absence of such preconditions.</li>
-        <li> Intentional Throw Exception: Programmers often use test cases to ensure code correctness. In such scenario, programmers may intentionally provide cases where the API will surely throw exception. The exceptional cases will confirm the programmer the code behavior is correct. These type of cases usually do not contain any preconditions before calling the API.</li>
-        <li> Unintentional Throw Exception: The other subcategory thatwe observed in our code corpus is that programmers incorrectly used the API without checking the required preconditions. Incorrect usage of any API results in throwing exceptions. This type of buggy code does not contain required preconditions.</li>
-      </ul>
-      </span>
-      <image src="figures/table3.png" />
+      <image src="figures/table3.png" /> 
       </p>
+      <ul style="list-style-type:none">
+        <li><strong>No Check.</strong> The first category of missing cases are those preconditions that does not appear explicitly nor implicitly at all in the code corpus before calling the APIs. The absence of such preconditions are mainly caused by four factors:</li>
+          <ul>
+            <li>Exception Handling: Sometimes programmers might be unsure about the preconditions of the APIs, thus, they would surround API calls with try statements and catch clauses to handle the exceptions. This is often the reason why code corpus do not have the necessary preconditions for APIs before calling.</li>
+            <li>Semantics Guarantee No Exception: Sometimes developers are well aware that the domain semantics of their project guarantees that certain preconditions of an API always hold. For example, if they know the files are always non-empty, then the list of lines read from the files are always non-empty too. Therefore, accessing first element of the list is always possible. In such cases, checking whether precondition is met before calling the API becomes extraneous, resulting in the absence of such preconditions.</li>
+            <li> Intentional Throw Exception: Programmers often use test cases to ensure code correctness. In such scenario, programmers may intentionally provide cases where the API will surely throw exception. The exceptional cases will confirm the programmer the code behavior is correct. These type of cases usually do not contain any preconditions before calling the API.</li>
+            <li> Unintentional Throw Exception: The other subcategory thatwe observed in our code corpus is that programmers incorrectly used the API without checking the required preconditions. Incorrect usage of any API results in throwing exceptions. This type of buggy code does not contain required preconditions.</li>
+          </ul>
+        <li><strong>Infrequent.</strong> Those preconditions are present in the client code but not frequent enough to be considered as correct preconditions by the mining tool.</li>
+        <li><strong>Private.</strong> The final category belongs to the type of preconditions that involve private/internal members of the APIs, that cannot be accessed outside the implementation of the APIs. They are, therefore, not possible to be observed in the client before calling the API.</li>
+      </ul>     
     </div>
     <!-- ################################################################################################ -->
   </div>
