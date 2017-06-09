@@ -107,17 +107,17 @@
 		<p><a name="cfa"><h2>1-Level Control Flow Analysis (1-CFA)</h2></a>
 		If a parameter of a procedure is directly passed to an API, the existing mining approach cannot mine precondition for that API due to absence of calling context. Performing single level context sensitive analysis to infer preconditions for such cases can benefit in mining more preconditions. This component takes advantage of both implicit belief related conditions and explicit conditions from the caller methods if such conditions are within context. All libraries of interest shows rise in terms of both precision and recall. The detailed result is shown in Figure 17.
 		<image src="figures/cfa.png" /></p>
-	    	<p><a name="cfa_comparison">A full comparison of Beliefs, CFA, CFA+Beliefs with respect to the baseline</a> in terms of precision and recall is shown in the following figure respectively:</p>
+	    	<h4><a name="cfa_comparison">A full comparison of Beliefs, CFA, CFA+Beliefs with respect to the baseline</a> in terms of precision and recall is shown in the following figure respectively:</h4>
 	    	<div id="cfa-table">
     			<table>
-        			<tr style="text-align:center">
+        			<tr style="text-align:center; font-size:">
             				<td style="padding:5px">
                		 			<img src="figures/CFA-comparison-precision.png">
-						(a) Relative improvement in precision
+						<h4>(a) Relative improvement in precision</h4>
               				</td>
             				<td style="padding:5px">
                 				<img src="figures/CFA-comparison-recall.png">
-						(b) Relative improvement in recall
+						<h4>(b) Relative improvement in recall</h4>
              				</td>
         			</tr>
     			</table>
